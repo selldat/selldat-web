@@ -1,19 +1,15 @@
 {
-  "name": "mean",
-  "description": "MEAN.io: A fullstack javascript platformed powerd by MongoDB, ExpressJS, AngularJS, NodeJS.",
+  "name": "selldat.com",
+  "description": "Selldat Corporate Website",
   "version": "0.3.2",
   "private": false,
-  "author": "Linnovate <mean@linnovate.net>",
+  "author": "Selldat Development Office <dev@selldat.com>",
   "contributors": [
-    {"name":"Lior Kesos", "mail": "lior@linnovate.net"},
-    {"name":"Yonatan Ellman", "mail": "yonatan@linnovate.net"},
-    {"name":"Ehud Shahak", "mail": "ehud@linnovate.net"},
-    {"name":"Amos Haviv", "mail": "mail@amoshaviv"},
-    {"name":"Drew Fyock", "mail": "drew@steelbisondev.com"}
+    {"name":"Jose del Toro", "mail": "jose@selldat.com"}
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/linnovate/mean.git"
+    "url": "https://github.com/selldat/selldat.com"
   },
   "engines": {
     "node": "0.10.x",
