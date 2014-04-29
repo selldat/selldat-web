@@ -340,13 +340,13 @@ section.section {
 ============================= */
 
 #parallax1{	
-	background-image: url(public/system/assets/img/parallax/servers1.jpg);
+	background-image: url(/public/system/assets/img/parallax/servers1.jpg);
 }
 #parallax2{	
-	background-image: url(public/system/assets/img/parallax/img2.jpg);
+	background-image: url(/public/system/assets/img/parallax/img2.jpg);
 }
 #testimonials{	
-	background-image: url(public/system/assets/img/parallax/shanghai1.jpg);
+	background-image: url(/public/system/assets/img/parallax/shanghai1.jpg);
 }
 /*===========================
   --- Header & menu ----
@@ -604,6 +604,14 @@ section.featured.inner {
 /*==========================
 About
 =========================== */
+
+.about{	
+	color: #6d6e70;
+}
+
+h2.about {
+	padding-top: 100px;
+}
 
 .member-photo {
 	box-sizing:border-box;
