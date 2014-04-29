@@ -128,17 +128,5 @@
             });
 
         }
-	
-	//nicescroll
-	$('html').niceScroll({zindex:999,cursorborder:'',cursorborderradius:'2px',cursorcolor:'#191919',cursoropacitymin:0.5});
-	function initNice() {
-		if($(window).innerWidth() <= 960) {
-			$('html').niceScroll().remove();
-		} else {
-			$('html').niceScroll({zindex:999,cursorborder:'',cursorborderradius:'2px',cursorcolor:'#191919',cursoropacitymin:0.5});
-		}
-	}
-	$(window).load(initNice);
-	$(window).resize(initNice);
 
 })(jQuery);
