@@ -133,6 +133,10 @@ a:hover {
 	color: #fff;
 }
 
+.color-grey {
+	color: #6d6e70;
+}
+
 .theme-bg {
 	background-color: #ff7701 !important;
 }
@@ -336,7 +340,7 @@ section.section {
 ============================= */
 
 #parallax1{	
-	background-image: url(../img/parallax/img1.jpg);
+	background-image: url(../img/parallax/servers1.jpg);
 }
 #parallax2{	
 	background-image: url(../img/parallax/img2.jpg);
