@@ -20,6 +20,8 @@
     "modernizr": "~2.7.2",
     "skrollr": "~0.6.24",
     "jquery.stellar": "~0.6.2",
-    "fancybox": "~2.1.5"
+    "fancybox": "~2.1.5",
+    "fontawesome": "~4.0.3",
+    "animate.css": "~3.1.1"
   }
 }
