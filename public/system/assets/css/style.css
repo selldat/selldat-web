@@ -340,6 +340,7 @@ section.section {
 ============================= */
 
 #parallax1{	
+<<<<<<< HEAD
 	background-image: url(/public/system/assets/img/parallax/servers1.jpg);
 }
 #parallax2{	
@@ -347,6 +348,16 @@ section.section {
 }
 #testimonials{	
 	background-image: url(/public/system/assets/img/parallax/shanghai1.jpg);
+=======
+<<<<<<< HEAD
+	background-image: url(../../system/assets/img/parallax/servers1.jpg);
+}
+#parallax2{	
+	background-image: url(../../system/assets/img/parallax/img2.jpg);
+}
+#testimonials{	
+	background-image: url(../../system/assets/img/parallax/shanghai1.jpg);
+>>>>>>> 79a767949c49ccca68e7ab5d9f7116844c9bb6cc
 }
 /*===========================
   --- Header & menu ----
