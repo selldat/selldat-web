@@ -340,13 +340,13 @@ section.section {
 ============================= */
 
 #parallax1{	
-	background-image: url(../img/parallax/servers1.jpg);
+	background-image: url(../../system/assets/img/parallax/servers1.jpg);
 }
 #parallax2{	
-	background-image: url(../img/parallax/img2.jpg);
+	background-image: url(../../system/assets/img/parallax/img2.jpg);
 }
 #testimonials{	
-	background-image: url(../img/parallax/shanghai1.jpg);
+	background-image: url(../../system/assets/img/parallax/shanghai1.jpg);
 }
 /*===========================
   --- Header & menu ----
