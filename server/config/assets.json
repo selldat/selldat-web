@@ -3,11 +3,11 @@
 		"public/build/css/dist.min.css": [
 			"public/system/lib/bootstrap/dist/css/bootstrap.css",
 			"public/system/lib/bootstrap/dist/css/bootstrap-theme.css",
-			"public/system/lib/animate.css/animate.css",
-			"public/system/lib/fontawesome/font-awesome.css",
 			"public/system/assets/css/common.css",
 			"public/system/assets/css/default.css",
-			"public/system/assets/css/style.css"
+			"public/system/assets/css/style.css",
+			"public/system/lib/animate.css/animate.css",
+			"public/system/lib/fontawesome/css/font-awesome.css"
 		]
 	},
 	"js": {
@@ -25,7 +25,6 @@
 			"public/system/lib/jquery.easing/js/jquery.easing.js",
 			"public/system/lib/isotope/jquery.isotope.js",
 			"public/system/lib/jquery.localScroll/jquery.localScroll.js",
-			"public/system/lib/jquery.nicescroll/jquery.nicescroll.js",
 			"public/system/lib/jquery.scrollTo/jquery.scrollTo.js",
 			"public/system/lib/skrollr/dist/skrollr.min.js",
 			"public/system/lib/jquery.stellar/jquery.stellar.js",
