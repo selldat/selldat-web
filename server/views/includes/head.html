@@ -10,20 +10,9 @@
 
     <link href="public/system/assets/img/icons/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
-    <meta property="fb:app_id" content="APP_ID">
-    <meta property="og:title" content="{{appName}} - {{title}}">
-    <meta property="og:description" content="Selldat - Bitcoin for Everyone">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="APP_URL">
-    <meta property="og:image" content="APP_LOGO">
-    <meta property="og:site_name" content="Selldat">
-    <meta property="fb:admins" content="APP_ADMIN">
-
     {% for file in assets.css %}
         <link rel="stylesheet" href="{{file}}">
     {% endfor %}
-
-    <link rel="stylesheet" href="/modules/aggregated.css">
 
 <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>

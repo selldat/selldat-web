@@ -448,6 +448,7 @@ section.featured {
 
 section.featured p.slogan {
 	padding-top: 120px;
+	padding-bottom: 120px;
 	color: #6d6e70;
 	font-size: 25px;
 }
