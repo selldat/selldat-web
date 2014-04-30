@@ -6,7 +6,7 @@
 			"public/system/assets/css/common.css",
 			"public/system/assets/css/default.css",
 			"public/system/assets/css/style.css",
-			"public/system/lib/animate.css/animate.css"
+			"public/system/lib/animate.css/animate.css",
 			"public/**/assets/css/*.css"
 		]
 	},
