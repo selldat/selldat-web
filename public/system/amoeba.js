@@ -2,6 +2,7 @@
 /*global Modernizr:false */
 /*global skrollr:false */
 /*jshint unused:false*/
+
 'use strict';
 
 (function ($) {
