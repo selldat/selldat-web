@@ -24,6 +24,7 @@
 
 	
 	// portfolio
+    /*
     if($('.isotopeWrapper').length){
 
         var $container = $('.isotopeWrapper');
@@ -68,13 +69,11 @@
                 }
             });
         });
-        
-
-}  
+    }  */
 
 
 	// fancybox
-	jQuery('.fancybox').fancybox();
+	//jQuery('.fancybox').fancybox();
 
 
 	if (Modernizr.mq('screen and (max-width:1024px)')) {
@@ -99,13 +98,13 @@
 
 
 	//scroll menu
-	jQuery('.appear').appear();
+	/*jQuery('.appear').appear();
 	jQuery('.appear').on('appear', function(data) {
 			var id = $(this).attr('id');
 			jQuery('.nav li').removeClass('active');
 			jQuery('.nav a[href=#' + id + '\']').parent().addClass('active');					
 		});
-
+*/
 
 		//parallax
         var isMobile = false;
