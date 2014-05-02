@@ -1,5 +1,6 @@
 /*global jQuery:false */
-"use strict";
+/*jshint unused:false */
+'use strict';
 
 jQuery(document).ready(function($) {
 
@@ -7,11 +8,12 @@ jQuery(document).ready(function($) {
 	$('form.contactForm').submit(function(){
 
 		var f = $(this).find('.form-group'), 
+		exp,
 		ferror = false, 
+		result,
 		emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
 
 		f.children('input').each(function(){ // run all inputs
-
 			var i = $(this); // current input
 			var rule = i.attr('data-rule');
 
@@ -19,7 +21,7 @@ jQuery(document).ready(function($) {
 			var ierror=false; // error flag for current input
 			var pos = rule.indexOf( ':', 0 );
 			if( pos >= 0 ){
-				var exp = rule.substr( pos+1, rule.length );
+				exp = rule.substr( pos+1, rule.length );
 				rule = rule.substr(0, pos);
 			}else{
 				rule = rule.substr( pos+1, rule.length );
@@ -60,7 +62,7 @@ jQuery(document).ready(function($) {
 			var ierror=false; // error flag for current input
 			var pos = rule.indexOf( ':', 0 );
 			if( pos >= 0 ){
-				var exp = rule.substr( pos+1, rule.length );
+				exp = rule.substr( pos+1, rule.length );
 				rule = rule.substr(0, pos);
 			}else{
 				rule = rule.substr( pos+1, rule.length );
@@ -75,26 +77,27 @@ jQuery(document).ready(function($) {
 				if( i.val().length<parseInt(exp) ){ ferror=ierror=true; }
 				break;
 			}
-				i.next('.validation').html( ( ierror ? (i.attr('data-msg') != undefined ? i.attr('data-msg') : 'wrong Input') : '' ) ).show('blind');
+				i.next('.validation').html( ( ierror ? (i.attr('data-msg') !== undefined ? i.attr('data-msg') : 'wrong Input') : '' ) ).show('blind');
 			}
 		});
+		var str;
 		if( ferror ) return false; 
-			else var str = $(this).serialize();		
+			else str = $(this).serialize();		
 				$.ajax({
-				type: "POST",
-				url: "contact/contact.php",
+				type: 'POST',
+				url: 'contact/contact.php',
 				data: str,
 				success: function(msg){
-			$("#sendmessage").addClass("show");
-			$("#errormessage").ajaxComplete(function(event, request, settings){
+			$('#sendmessage').addClass('show');
+			$('#errormessage').ajaxComplete(function(event, request, settings){
 		
-			if(msg == 'OK')
+			if(msg === 'OK')
 			{
-				$("#sendmessage").addClass("show");				
+				$('#sendmessage').addClass('show');				
 			}
 			else
 			{
-				$("#sendmessage").removeClass("show");
+				$('#sendmessage').removeClass('show');
 				result = msg;
 			}
 		
