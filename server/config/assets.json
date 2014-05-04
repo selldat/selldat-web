@@ -1,0 +1,33 @@
+{
+	"css": {
+		"public/build/css/dist.min.css": [
+			"public/system/lib/bootstrap/dist/css/bootstrap.css",
+			"public/system/lib/bootstrap/dist/css/bootstrap-theme.css",
+			"public/system/assets/css/common.css",
+			"public/system/assets/css/default.css",
+			"public/system/assets/css/style.css",
+			"public/system/lib/animate.css/animate.css"
+		]
+	},
+	"js": {
+		"public/build/js/dist.min.js": [
+			"public/system/lib/angular/angular.js",
+			"public/system/lib/angular-cookies/angular-cookies.js",
+			"public/system/lib/angular-resource/angular-resource.js",
+			"public/system/lib/angular-ui-router/release/angular-ui-router.js",
+			"public/system/lib/angular-bootstrap/ui-bootstrap.js",
+			"public/system/lib/angular-bootstrap/ui-bootstrap-tpls.js",
+			"public/system/lib/jquery/dist/jquery.js",
+			"public/system/lib/modernizr/modernizr.js",
+			"public/system/lib/jquery.easing/js/jquery.easing.js",
+			"public/system/lib/jquery.localScroll/jquery.localScroll.js",
+			"public/system/lib/jquery.scrollTo/jquery.scrollTo.js",
+			"public/system/lib/skrollr/dist/skrollr.min.js",
+			"public/system/lib/jquery.stellar/jquery.stellar.js",
+			"public/init.js",
+			"public/*/*.js",
+			"public/*/*/*.js",
+			"!public/build/**"
+		]
+	}
+}

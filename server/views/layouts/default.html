@@ -1,0 +1,193 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    {% include '../includes/head.html' %}
+    <body>
+                <section id="header" class="appear"></section>
+        <div class="navbar navbar-fixed-top" role="navigation" data-0="line-height:100px; height:100px; background-color:rgba(93,199,210,1);" data-300="line-height:60px; height:60px; background-color:rgba(0,0,0,1);">
+             <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="fa fa-bars color-white"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">
+                        <li class="active"><a href="#section-home">Home</a></li>
+                        <li><a href="#section-products">Products</a></li>
+                        <li><a href="#section-contact">Contact</a></li>
+                    </ul>
+                </div><!--/.navbar-collapse -->
+            </div>
+        </div>
+
+        <section id="section-home" class="featured">
+            <div class="container"> 
+                <div class="row mar-bot40">
+                    <div class="col-md-3 col-md-offset-2">
+                        <div>
+                            <p class="slogan align-right">
+                            Money Has Changed  
+                            </p>    
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-md-offset-2">
+                        <figure><img src="public/system/assets/img/logos/logo-flat.png" alt="The Three Giants" /></figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- services -->
+        <section id="section-services" class="section pad-bot30 bg-turquoise">
+        <div class="container"> 
+        
+            <div class="row mar-bot40">
+                <div class="col-lg-2 col-lg-offset-1" >
+                    <div class="align-center">
+                        <i class="fa fa-forward fa-5x mar-bot20"></i>
+                        <p>The latest technologies, nothing else
+                        </p>
+                    </div>
+                </div>
+                    
+                <div class="col-lg-2 col-lg-offset-2" >
+                    <div class="align-center">
+                        <i class="fa fa-money fa-5x mar-bot20"></i>
+                        <p>Secure as your regular fortress
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="col-lg-2 col-lg-offset-2" >
+                    <div class="align-center">
+                        <i class="fa fa-mobile fa-5x mar-bot20"></i>
+                        <p>Easier than reaching into your pocket
+                        </p>
+                    </div>
+                </div>
+            
+            </div>  
+
+        </div>
+        </section>
+            
+        <!-- spacer section:parallax2 -->
+        <section id="parallax2" class="section" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row">               
+                    <div class="col-lg-12">
+                            <div class="align-center">
+                                        <div class="testimonial pad-top40 pad-bot40 clearfix">
+                                            <h5>
+                                                "I think the internet is going to be one of the major forces for reducing the role of government. The one thing that’s missing but that will soon be developed, is a reliable e-cash"
+                                            </h5>
+                                            <br/>
+                                                <span class="author">
+                                                Milton Friedman, winner of Nobel prize in economics
+                                            </span>
+                                        </div>
+
+                                </div>
+                            </div>
+                    </div>
+                
+            </div>  
+        </div>  
+        </section>
+            
+        <!-- about -->
+        <section id="section-products" class="section appear clearfix">
+        <div class="container">
+
+                <div class="row">
+                    <div class="col-md-5">
+                        <h2 class="about animated align-right" data-animation="bounceInUp">Coinbinator</h2>
+                        <h3 class="about align-right">Social finance</h3>
+                        <p class="about align-right">Send money to any of your friends, wherever they are. Pay for services or products only when they are delivered. Instant transfers of any amount.</p>
+                    </div>
+                    <div class="col-md-5 col-md-offset-1">
+                        <figure><img src="public/system/assets/img/portfolio/coinbinator.png" alt="Coinbinator capture" /></figure>
+                    </div>
+                </div>
+
+        </div>
+        </section>
+        <!-- /about -->
+        
+        <!-- spacer section:stats -->
+        <section id="parallax1" class="section pad-top40 pad-bot40" data-stellar-background-ratio="0.5">
+            <div class="container">
+            <div class="align-center pad-top40 pad-bot40">
+                <blockquote class="bigquote color-white">The Future of Finance</blockquote>
+            </div>
+            </div>  
+        </section>
+        
+        <!-- contact -->
+        <section id="section-contact" class="section appear clearfix">
+            <div class="container">
+                
+                <div class="row mar-bot40">
+                    <div class="col-md-offset-3 col-md-6">
+                        <div class="section-header">
+                            <h2 class="section-heading animated color-grey" data-animation="bounceInUp">Stay Tuned</h2>
+                            <p class="color-grey">We will set you up for our private products with exclusive advantages. Non-invasive, one-click unsubscribe</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="cform" id="contact-form">
+                            <div id="sendmessage">
+                                 Your message has been sent. Thank you!
+                            </div>
+                            <form action="contact/contact.php" method="post" role="form" class="contactForm">
+                              <div class="form-group">
+                                <label class="color-grey" for="email">Your Email</label>
+                                <!--<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />-->
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="This doesn't work yet but you can send email to info@selldat.com" />
+                                <div class="validation"></div>
+                              </div>
+                              <button type="submit" class="btn btn-theme pull-left">Keep in touch</button>
+                            </form>
+
+                        </div>
+                    </div>
+                    <!-- ./span12 -->
+                </div>
+                
+            </div>
+        </section>
+        <!-- map -->
+        <section id="section-map" class="clearfix">
+            <div id="map"></div>
+        </section>
+        
+    <section id="footer" class="section footer">
+        <div class="container">
+            <!--
+            <div class="row animated opacity mar-bot20" data-andown="fadeIn" data-animation="animation">
+                <div class="col-sm-12 align-center">
+                    <ul class="social-network social-circle">
+                        <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>               
+                </div>
+            </div>
+            -->
+            <div class="row align-center copyright">
+                    <div class="col-sm-12"><p>Copyright &copy; 2013-2014 <a href="mailto:info@selldat">Selldat</a></div>
+            </div>
+        </div>
+
+    </section>
+    <a href="#header" class="scrollup"><i class="fa fa-chevron-up"></i></a> 
+        {% include '../includes/foot.html' %}
+    </body>
+</html>
