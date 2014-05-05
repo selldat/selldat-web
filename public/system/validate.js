@@ -37,8 +37,7 @@ jQuery(document).ready(function($) {
 				break;
 
 				case 'email':
-				//if( !emailExp.test(i.val()) ){ ferror=ierror=true; }
-				ferror=ierror=true;
+				if( !emailExp.test(i.val()) ){ ferror=ierror=true; }
 				break;
 
 				case 'checked':
