@@ -19,12 +19,13 @@
                 // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
                 var mapOptions = {
                     // How zoomed in you want the map to start at (always required)
-                    zoom: 9,
+                    zoom: 10,
 
                     // The latitude and longitude to center the map (always required)
-                    center: new google.maps.LatLng(31.0925326,122.0175827), // Shanghai
+                    center: new google.maps.LatLng(22.3982379,114.1606881), // Shanghai
                     disableDefaultUI: true,
                     scrollwheel: false,
+                    draggable: false,
                     // How you would like to style the map. 
                     // This is where you would paste any style found on Snazzy Maps.
                     styles: [	{		featureType:"all",		elementType:"all",		stylers:[		{			invert_lightness:true		},		{			saturation:10		},		{			lightness:30		},		{			gamma:0.5		},		{			hue:"#1C705B"		}		]	}	]
