@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1,h2,h3,h4,h5,h6 {
-	font-style: light;
+	font-weight: lighter;
 	margin: 0 0 20px 0;
 }
 h1 { font-size: 40px; line-height: 30px; }
@@ -48,8 +48,9 @@ blockquote {
 
 blockquote.bigquote {
 	border: none;
-	font-size: 48px;
-	font-weight: 700;
+	font-size: 30px;
+	font-weight: normal;
+	font-style: italic;
 	line-height: 1.1em;
 }
 
@@ -332,9 +333,19 @@ section.section {
 }
 .section-header h2.section-heading {
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: bold;
+	font-size: 30px;
 }
 
+label{
+	font-size: 18px;
+	font-weight: lighter;
+}
+
+.feature{
+	font-size: 28px;
+	font-weight: lighter;
+}
 /* ==========================
  --- Parallax ---
 ============================= */
@@ -448,6 +459,7 @@ section.featured p.slogan {
 	padding-bottom: 120px;
 	color: #6d6e70;
 	font-size: 25px;
+	font-weight: lighter;
 }
   
  /* inner heading */
@@ -604,10 +616,18 @@ About
 
 .about{	
 	color: #6d6e70;
+	font-weight: lighter;
 }
 
 h2.about {
 	padding-top: 100px;
+	font-weight: normal;
+	font-size: 38px;
+}
+
+h3.about {
+	font-weight: lighter;
+	font-size: 38px;
 }
 
 .member-photo {
@@ -741,23 +761,27 @@ nav#filter a {
 =========================== */
 #testimonals {
 	padding-top: 20px;
-	padding-bottom:40px;
-	position:relative;
-	margin-top:50px;
+	padding-bottom: 40px;
+	position: relative;
+	margin-top: 50px;
 }
 .testimonial i {
 	color: #fff;
 }
 .testimonial span.author {
 	color: #fff;
-	font-weight: 700;
+	font-weight: normal;
+	font-size: 30px;
+	font-style: italic;
 }
 
 .testimonial h5 {
 	color: #fff;
 	font-size: 30px;
-	font-family: Georgia, sans-serif;
+	font-family: Lato, sans-serif;
+	font-style: italic;
 	line-height: 1.5em;
+	font-weight: normal;
 }	
 
 /*===========================
@@ -783,6 +807,10 @@ nav#filter a {
 
 #sendmessage.show,.show  {
 	display:block;
+}
+
+.contact{
+	font-size: 20px;
 }
 
 #contact-form {
@@ -1032,6 +1060,8 @@ a.socialIcon:hover, .socialHoverClass {
 /* buttons */
 .btn {
 	border: 0;
+	font-size: 18px;
+	font-style: bold;
 }
 
 .btn.bold {
