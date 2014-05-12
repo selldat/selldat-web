@@ -100,7 +100,7 @@
         </section>
         
         <!-- contact -->
-        <section id="section-contact" class="section appear clearfix">
+        <section id="section-contact" class="section appear clearfix" data-ng-controller="LeadsController">
             <div class="container">
                 <div class="row mar-bot40">
                     <div class="col-md-offset-3 col-md-6">
@@ -113,17 +113,20 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <div class="cform" id="contact-form">
-                            <div id="sendmessage">
+                            <div id="sendmessage" ng-class="{show: success === true}">
                                  Your message has been sent. Thank you!
                             </div>
-                            <form action="contact/contact.php" method="post" role="form" class="contactForm">
+                            <div ng-class="{show: error === true}">
+                                Email already registered
+                            </div>
+                            <form role="form" class="contactForm">
                               <div class="form-group">
                                 <label class="color-grey" for="email">Your Email</label>
                                 <!--<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />-->
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                <input type="email" class="form-control" ng-model="lead.email" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
                                 <div class="validation"></div>
                               </div>
-                              <button type="submit" class="btn btn-theme pull-left">Keep in touch</button>
+                              <button class="btn btn-theme pull-left" ng-click="createLead($event)">Keep in touch</button>
                             </form>
 
                         </div>

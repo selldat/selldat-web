@@ -807,6 +807,7 @@ nav#filter a {
 
 #sendmessage.show,.show  {
 	display:block;
+	color: #777;
 }
 
 .contact{
