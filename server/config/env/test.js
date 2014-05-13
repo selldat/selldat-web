@@ -6,6 +6,8 @@ module.exports = {
     app: {
         name: 'Selldat - Test'
     },
+    sendgrid_username: process.env.SENDGRID_USERNAME,
+    sendgrid_password: process.env.SENDGRID_PASSWORD,
     facebook: {
         clientID: 'APP_ID',
         clientSecret: 'APP_SECRET',
