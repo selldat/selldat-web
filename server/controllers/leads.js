@@ -9,11 +9,11 @@ exports.create = function (req, res, next) {
   var lead = new Lead(req.body),
     message = {
       to: '',
-      from: 'wilson.balderrama@gmail.com',
+      from: 'support@selldat.com',
       subject: 'Welcome',
-      text: 'Thanks for joining us!'
+      text: 'We got it. Let us get in touch with you as soon as we have something great to offer.Thank you, Selldat'
     },
-    email = null;
+    email = new sendgrid.Email(message);
 
   lead.save(function (err) {
     if(err) {
@@ -23,8 +23,8 @@ exports.create = function (req, res, next) {
         return res.status(400).json({error: err.errors.email.message});
       }
     }
-    message.to = lead.email;
-    email = new sendgrid.Email(message); 
+    email.to = lead.email;
+    
     sendgrid.send(email, function (err, json) {
       console.log('err:');
       console.log(err);

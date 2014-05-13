@@ -116,16 +116,18 @@
                             <div id="sendmessage" ng-class="{show: success === true}">
                                  Your message has been sent. Thank you!
                             </div>
-                            <div ng-class="{show: error === true}">
-                                <!--Email already registered-->
-                            </div>
+
                             <form role="form" class="contactForm">
                               <div class="form-group">
                                 <label class="color-grey" for="email">Your Email</label>
                                 <!--<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />-->
                                 <input type="email" class="form-control" ng-model="lead.email" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
                                 <div class="validation"></div>
+                                <div ng-class="{'error-email': error === true}">
+                                    Email already registered
+                                </div>
                               </div>
+
                               <button class="btn btn-theme pull-left" ng-click="createLead($event)">Keep in touch</button>
                             </form>
 

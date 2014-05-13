@@ -4,6 +4,7 @@ angular.module('mean.leads').controller('LeadsController', ['$scope', 'Leads', f
   $scope.lead = {email: ''};
   $scope.success = false;
   $scope.error = false;
+  $scope.errorMessage = '';
 
   $scope.createLead = function ($event) {
     if ($scope.lead.email) {
