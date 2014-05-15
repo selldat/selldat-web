@@ -810,11 +810,11 @@ nav#filter a {
 	color: #777;
 }
 
-.error-email {
+.email-feedback {
 	color: #79CDC0;
 	display:block;
 	font-size: 18px;
-	font-weight: lighter;
+	font-weight: normal;
 }
 
 .contact{
@@ -848,7 +848,7 @@ nav#filter a {
 }
 #contact-form input[type=text],#contact-form input[type=email] {
 	height: 60px;
-	margin-bottom:30px;
+	margin-bottom:10px;
 }
 #contact-form input[type=submit] {
 	color: #fff;
