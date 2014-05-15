@@ -113,18 +113,17 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <div class="cform" id="contact-form">
-                            <div id="sendmessage" ng-class="{show: success === true}">
-                                 Your message has been sent. Thank you!
-                            </div>
-
                             <form role="form" class="contactForm">
                               <div class="form-group">
                                 <label class="color-grey" for="email">Your Email</label>
                                 <!--<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />-->
                                 <input type="email" class="form-control" ng-model="lead.email" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
                                 <div class="validation"></div>
-                                <div ng-class="{'error-email': error === true}">
-                                    <!--Email already registered-->
+                                <div class="email-feedback" ng-show="error">
+                                    Thank you! We got it already : )
+                                </div>
+                                <div class="email-feedback" ng-show="success">
+                                    Thank you! We will get in touch!
                                 </div>
                               </div>
 
