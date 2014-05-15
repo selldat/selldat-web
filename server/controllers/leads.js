@@ -9,7 +9,8 @@ exports.create = function (req, res, next) {
   var lead = new Lead(req.body),
     message = {
       to: '',
-      from: '"Selldat" <info@selldat.com>',
+      from: 'Selldat',
+      replyto: 'info@selldat.com'
       subject: 'Welcome to Selldat',
       text: ' '
     },
