@@ -9,9 +9,9 @@ exports.create = function (req, res, next) {
   var lead = new Lead(req.body),
     message = {
       to: '',
-      from: 'support@selldat.com',
-      subject: 'Welcome',
-      text: 'We got it. Let us get in touch with you as soon as we have something great to offer.Thank you, Selldat'
+      from: 'info@selldat.com',
+      subject: 'Welcome to Selldat',
+      text: 'We got it. <br/><br/> We will get in touch soon. <br/><br/> Thank you, <br/> Selldat'
     },
     email = new sendgrid.Email(message);
 
