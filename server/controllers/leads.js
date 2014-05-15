@@ -10,7 +10,7 @@ exports.create = function (req, res, next) {
     message = {
       to: '',
       from: 'Selldat',
-      replyto: 'info@selldat.com'
+      replyto: 'info@selldat.com',
       subject: 'Welcome to Selldat',
       text: ' '
     },
